@@ -1,0 +1,2 @@
+export function salvarVoluntario(dado){ const lista = JSON.parse(localStorage.getItem('voluntarios')||'[]'); lista.push(dado); localStorage.setItem('voluntarios', JSON.stringify(lista)); }
+export function listarVoluntarios(){ return JSON.parse(localStorage.getItem('voluntarios')||'[]'); }
