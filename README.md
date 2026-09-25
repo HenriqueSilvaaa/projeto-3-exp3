@@ -2,7 +2,7 @@
 
 **FIAP - Entrega Final - 25/09/2026**
 Repositório: https://github.com/HenriqueSilvaaa/projeto-3-exp3
-Release Final: https://github.com/HenriqueSilvaaa/projeto-3-exp3/releases/tag/v1.0.0
+Release Final: https://github.com/HenriqueSilvaaa/projeto-3-exp3/releases/tag/v1.1.0
 
 ## 📋 Status Final: CONCLUÍDO 100%
 
