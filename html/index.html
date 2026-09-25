@@ -9,17 +9,19 @@
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 <body>
-<header>
+<a href="#app" class="skip-link">Pular para o conteúdo principal</a>
+<header role="banner">
 <h1>ONG Esperança Viva</h1>
-<nav>
+<nav role="navigation" aria-label="Menu principal">
 <a href="#home">Início</a>
 <a href="#projetos">Projetos</a>
 <a href="#cadastro">Seja Voluntário</a>
 </nav>
 </header>
-<main id="app"></main>
-<footer><p>&copy; 2024 ONG Esperança Viva</p></footer>
-
+<main id="app" role="main"></main>
+<footer role="contentinfo">
+<p>&copy; 2024 ONG Esperança Viva</p>
+</footer>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 <script type="module" src="../js/main.js"></script>
 </body>
