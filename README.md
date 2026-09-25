@@ -23,3 +23,4 @@ javascript# Projeto 3 - EXP3 - Templates Acessíveis e Roteamento
 
 ## Branches
 - master, develop, feature/templates-e-roteamento
+- - feat: template acessível final v1.0 - Closes #1
