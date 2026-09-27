@@ -8,40 +8,28 @@ input { width:100%; padding:10px; margin-top:5px; border:1px solid #ccc; border-
 button { width:100%; margin-top:20px; padding:12px; background:#2a7a4b; color:white; border:none; border-radius:5px; font-size:16px; cursor:pointer; }
 footer { text-align:center; padding:20px; color:#777; }
 .error { color:red; font-size:12px; }
-/* Efeito de foco e validação - Exp2 */
-input {
-  transition: all 0.3s ease;
-  border: 2px solid #ccc;
-}
 
-input:focus {
-  outline: none;
-  border-color: #0a7a42;
-  background-color: #e8f5e9;
-  box-shadow: 0 0 5px rgba(10, 122, 66, 0.5);
-}
+/* Exp2 */
+input { transition: all 0.3s ease; border: 2px solid #ccc; }
+input:focus { outline: none; border-color: #0a7a42; background-color: #e8f5e9; box-shadow: 0 0 5px rgba(10, 122, 66, 0.5); }
+input:invalid { border-color: #d32f2f; }
+input:valid { border-color: #2e7d32; }
+nav a { text-decoration: none; padding: 5px 10px; border-radius: 5px; transition: all 0.3s; }
+nav a:hover { background-color: #0a7a42; }
+nav a.active { background-color: #fff; color: #0a7a42 !important; font-weight: bold; }
 
-input:invalid {
-  border-color: #d32f2f;
-}
-
-input:valid {
-  border-color: #2e7d32;
-}
-/* Menu ativo */
-nav a {
-  text-decoration: none;
-  padding: 5px 10px;
-  border-radius: 5px;
-  transition: all 0.3s;
-}
-
-nav a:hover {
-  background-color: #0a7a42;
-}
-
-nav a.active {
-  background-color: #fff;
-  color: #0a7a42 !important;
-  font-weight: bold;
-}
+/* Exp3 - CORRIGIDO LEGIVEL */
+.skip-link{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;background:#000;color:#fff;padding:8px;z-index:9999}
+.skip-link:focus{left:10px;top:10px;width:auto;height:auto}
+:focus-visible{outline:3px solid #ffcc00;outline-offset:2px}
+html[data-theme="dark"] body{background:#121212 !important;color:#e0e0e0 !important}
+html[data-theme="dark"] header{background:#1a3d2a !important}
+html[data-theme="dark"] main{background:#1e1e1e !important;color:#e0e0e0 !important;border:1px solid #333 !important}
+html[data-theme="dark"] input{background:#333 !important;color:#fff !important;border-color:#555 !important}
+html[data-theme="dark"] h2, html[data-theme="dark"] label{color:#e0e0e0 !important}
+html.high-contrast body{background:#000 !important;color:#fff !important}
+html.high-contrast header{background:#000 !important;border:3px solid #ff0 !important}
+html.high-contrast main{background:#000 !important;color:#fff !important;border:3px solid #ff0 !important}
+html.high-contrast h1, html.high-contrast h2, html.high-contrast label, html.high-contrast p, html.high-contrast a{color:#ff0 !important}
+html.high-contrast input{background:#000 !important;color:#fff !important;border:2px solid #ff0 !important}
+html.high-contrast button{background:#ff0 !important;color:#000 !important;font-weight:bold !important}

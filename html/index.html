@@ -9,20 +9,32 @@
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 <body>
-<a href="#app" class="skip-link">Pular para o conteúdo principal</a>
-<header role="banner">
-<h1>ONG Esperança Viva</h1>
-<nav role="navigation" aria-label="Menu principal">
-<a href="#home">Início</a>
-<a href="#projetos">Projetos</a>
-<a href="#cadastro">Seja Voluntário</a>
-</nav>
-</header>
-<main id="app" role="main"></main>
-<footer role="contentinfo">
-<p>&copy; 2024 ONG Esperança Viva</p>
-</footer>
+  <a href="#app" class="skip-link">Pular para o conteúdo principal</a>
+  <header role="banner">
+    <h1>ONG Esperança Viva</h1>
+    <nav role="navigation" aria-label="Menu principal">
+      <a href="#home">Início</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#cadastro">Seja Voluntário</a>
+    </nav>
+  </header>
+  <main id="app" role="main"></main>
+  <footer role="contentinfo"><p>&copy; 2024 ONG Esperança Viva</p></footer>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 <script type="module" src="../js/main.js"></script>
+<script>
+  function toggleDark(){
+    const html = document.documentElement;
+    if(html.getAttribute('data-theme') === 'dark'){ html.removeAttribute('data-theme'); } 
+    else { html.setAttribute('data-theme','dark'); }
+  }
+  function toggleContrast(){ document.documentElement.classList.toggle('high-contrast'); }
+  const header = document.querySelector('header');
+  header.style.position='relative';
+  const div = document.createElement('div');
+  div.style.cssText='position:absolute;right:10px;top:10px;display:flex;gap:5px';
+  div.innerHTML='<button onclick="toggleDark()" style="width:auto;padding:8px 12px;margin:0">🌙 Escuro</button><button onclick="toggleContrast()" style="width:auto;padding:8px 12px;margin:0">👁️ Contraste</button>';
+  header.appendChild(div);
+</script>
 </body>
 </html>
